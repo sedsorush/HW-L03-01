@@ -1,11 +1,19 @@
-import "./ImageCard.css"
+/* eslint-disable react/prop-types */
 
-const ImageCard = () => {
+const imageStyle = {
+    height: "300px",
+    width: "300px",
+    alignSelf: "center",
+    paddingBottom: "15px",
+}
+
+const ImageCard = (props) => {
 
     return(
         <img className="image01"
-        src= "..\src\assets\pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image_15526568.png" 
-        alt="https://png.pngtree.com/png-clipart/20240709/original/pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image_15526568.png" />
+        style={imageStyle}
+        src= {props.source} 
+        alt= {props.altLink} />
     )
 };
 

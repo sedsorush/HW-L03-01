@@ -25,11 +25,5 @@
 
 .card:hover {
   background-color: #c9c8c8;
-  width: 360px;
-  height: 505px;
-}
-
-.card:hover .image01 {
-  height: 305px;
-  width: 305px;
+  padding: 20px;
 }
